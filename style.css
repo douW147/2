@@ -68,6 +68,7 @@ nav {
 
 .header__links-list {
     display: flex;
+    width: 100%;
 }
 
 
@@ -92,17 +93,20 @@ nav {
 .header__login-btn_font-orange:hover {
     color: #fff;
     background-color: var(--nav-btn);
+    box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
 }
 
 .header__login-btn_background-orange {
     transition: .1s linear;
     color: #fff;
     background-color: var(--nav-btn);
+    box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
 }
 
 .header__login-btn_background-orange:hover {
     background: #fff;
     color: var(--nav-btn);
+    box-shadow: 0px 4px 16px rgba(94, 89, 87, 0.32);
 }
 
 /* banner */
@@ -114,6 +118,10 @@ nav {
     font-size: 3.25rem;
     line-height: 4.1875rem;
     color: var(--banner-heading);
+}
+
+.banner__headings-container{
+    width: 100%;
 }
 
 .banner__heading_highlighted { 
@@ -151,6 +159,20 @@ nav {
 .banner__background-image {
     position: absolute;
     right: 0;
+}
+
+.banner__content {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__form-container {
+    padding: 5%;
+    max-width: 445px;
+    height: 459px;
+    position: relative;
+    background-color: #10375C;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -191,6 +213,17 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+
+    /* banner */
+
+    .banner__headings-container {
+        margin-bottom: 8%;
+    }
+
+    .banner__subheading-container{
+        margin-bottom: 11%;
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
