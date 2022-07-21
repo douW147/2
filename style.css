@@ -148,7 +148,12 @@ nav {
     margin-left: 15px;
 }
 
-@media only screen and (max-width: 1140px) {
+.banner__background-image {
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
 
     /* header */
 
@@ -176,7 +181,7 @@ nav {
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
     
     /* header */
 
@@ -185,10 +190,10 @@ nav {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 576px) {
 
     /* header */
 
