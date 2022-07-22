@@ -562,7 +562,7 @@ nav {
     color: var(--stats-items);
     padding-left: 0;
     display: flex;
-    margin-bottom: 15%;
+    margin-bottom: 13%;
 }
 
 .stats__item-icon {
