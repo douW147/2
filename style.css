@@ -156,7 +156,7 @@ nav {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 3.25rem;
+    font-size: 3.4rem;
     line-height: 4.1875rem;
     color: var(--banner-heading);
 }
@@ -757,10 +757,22 @@ nav {
 
 @media only screen and (max-width: 576px) {
 
+    /* general */
+
+    .container{ 
+        width: 95%;
+    }
+
     /* header */
 
     .header__link {
         font-size: 0.95rem;
     }
+
+    /* banner */
+
+    .banner__heading {
+        font-size: 3.1rem;
 }
 
+}
