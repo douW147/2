@@ -161,8 +161,12 @@ nav {
     color: var(--banner-heading);
 }
 
-.banner__headings-container{
+.banner__headings-container {
     width: 100%;
+}
+
+.banner__heading-container {
+    padding: 0;
 }
 
 .banner__heading_highlighted { 
@@ -176,6 +180,10 @@ nav {
     font-size:1.25rem;
     line-height: 1.875rem;
     color: var(--banner-subheading);
+}
+
+.banner__subheading-container {
+    padding: 0;
 }
 
 .banner__background-image {
@@ -704,7 +712,7 @@ nav {
         margin-bottom: 8%;
     }
 
-    .banner__subheading-container{
+    .banner__subheading-container {
         margin-bottom: 11%;
     }
 
@@ -759,8 +767,8 @@ nav {
 
     /* general */
 
-    .container{ 
-        width: 95%;
+    .container { 
+        padding: 0 2%;
     }
 
     /* header */
