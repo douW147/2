@@ -29,7 +29,8 @@
     --facilities-button-text: #222831;
     --facilities-button-bg: #fff;
     --facilities-button-text-active: #fff;
-    --facilities-button-bg-active: #FF5722;;
+    --facilities-button-bg-active: #FF5722;
+    --rewievs-card-text: #fff;
 }
 
 /* general */
@@ -41,7 +42,8 @@ body {
 }
 
 .container {
-    padding: 0;
+    padding: 0 10%;
+    max-width: 100%;
 }
 
 section {
@@ -138,6 +140,14 @@ section {
     font-size: 40px;
     line-height: 51px;
     color: var(--section-ttl-blue)
+}
+
+.section__title_text-center {
+    text-align: center;
+}
+
+.section__title_width-sm {
+    width: 40%;
 }
 
 .section__subtitle {
@@ -383,7 +393,7 @@ nav {
 .spaces__card_1 {
     grid-column: 1 / 3;
     transition: .3s linear;
-    background-image: url(./images/spaces-card-1.png);
+    background-image: url(./images/office1.jpg);
     background-size: 100% 419px;
     background-position: top left;
     background-repeat: no-repeat;
@@ -487,7 +497,7 @@ nav {
 .spaces__card_2 {
     grid-column: 3 / 5;
     transition: .2s linear;
-    background-image: url(./images/spaces-card-2.png);
+    background-image: url(./images/office2.jpeg);
     background-size: 100% 419px;
     background-position: top left;
     background-repeat: no-repeat;
@@ -535,7 +545,9 @@ nav {
 .spaces__card_3 {
     grid-column: 5 / 7;
     transition: .2s linear;
-    background-image: url(./images/spaces-card-1.png);
+    background-image: url(./images/office3.jpg);
+    background-size: cover;
+    object-fit: cover;
     background-size: 100% 419px;
     background-position: top left;
     background-repeat: no-repeat;
@@ -740,7 +752,106 @@ nav {
     grid-column: 3 / 5;
 }
 
+/* who use */
+
+.whouse {
+    padding-top: 0;
+}
+
+.whouse__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.whouse__headings-container {
+    padding: 2% 15%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.whouse__company-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+/* rewievs */
+
+.rewievs__headings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rewievs__cards-container {
+    flex-wrap: nowrap;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    margin-top: 6%;
+}
+
+.rewievs__card-container {
+    background-color: #0D2C4A;
+    margin-right: 2%;
+    color: var(--rewievs-card-text);
+    padding: 4%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rewievs__card-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 30%;
+}
+
+.rewievs__card-worker {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.rewievs__card-worker-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.rewievs__card-worker-position {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.rewievs__card-worker-details {
+    margin-left: 4%;
+}
+
+
 @media only screen and (max-width: 1200px) {
+
+    /* general */
+
+    .section__title_width-sm {
+        width: 60%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
 
     /* header */
 
@@ -812,7 +923,13 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
+
+    /* general */
     
+    .container {
+        max-width: 100%;
+    }
+
     /* header */
 
     .header__links-list {
@@ -908,6 +1025,13 @@ nav {
         margin: 1% 0;
     }
 
+    /* rewievs */
+
+    .rewievs__headings-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -916,6 +1040,15 @@ nav {
     .section__arrows_grid-area {
         grid-column: auto;
     }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .section__title_width-sm {
+        width: 80%;
+    }
+
     /* banner */
 
     .banner__headings-container {
@@ -942,7 +1075,7 @@ nav {
         grid-column-gap: 30px;
         grid-auto-columns: 1fr;
     }
-    
+
     .spaces__card_1 {
         grid-column: auto;
     }
@@ -978,14 +1111,43 @@ nav {
         padding: 3% 6%;
     }
 
+    /* galery */
+
+    .galery__container {
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+    }
+
+    /* whouse */
+
+    .whouse__company-item-container {
+        margin-bottom: 4%;
+    }
+
+    /* rewievs */
+
+    .rewievs__cards-container {
+        flex-wrap: wrap;
+        display: flex;
+        position: static;
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 6%;
+    }
+
+    .rewievs__card-container {
+        margin-right: 0;
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
 
     /* general */
-
-    .container { 
-        padding: 0 2%;
+    
+    .container {
+        max-width: 100%;
+        padding: 0 1%;
     }
 
     /* header */
@@ -1009,6 +1171,18 @@ nav {
     .facilities__button {
         width: 70%;
         padding: 5% 6%;
+    }
+
+    /* whouse */
+
+    .whouse__company-item-container {
+        margin-bottom: 10%;
+    }
+
+    /* rewievs */
+
+    .rewievs__card-container {
+        padding: 12%;
     }
 
 }
