@@ -1030,7 +1030,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     font-size: 1.375rem;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 
 .news__card-heading_font-big {
@@ -1126,16 +1126,16 @@ nav {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 52px;
-    line-height: 67px;
+    font-size: 3.25rem;
+    line-height: 4.1875rem;
 }
 
 .footer__subtitle {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     color: var(--footer-subtitle);
     opacity: 0.85;
     margin: 7% 0;
@@ -1145,8 +1145,8 @@ nav {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     opacity: 0.5;
     margin-bottom: 2.3rem;
     margin-top: 1.9rem;
@@ -1157,8 +1157,8 @@ nav {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     display: block;
     margin: 1rem 0;
 }
