@@ -134,11 +134,11 @@ section {
     color: var(--spaces-progress-bg);
 }
 
-.section__progress_position-absolute {
+.section__progress_position {
     position: absolute;
 }
 
-.section__progress-counter_position-relative {
+.section__progress-counter_position {
     width: 50px;
     position: relative;
     top: -18px;
@@ -389,7 +389,7 @@ nav {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size:1.25rem;
+    font-size: 1.25rem;
     line-height: 1.875rem;
     color: var(--banner-subheading);
 }
@@ -492,6 +492,10 @@ nav {
     height: 500px;
 }
 
+.spaces__card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
 .spaces__card_1 {
     grid-column: 1 / 3;
     transition: .3s linear;
@@ -540,7 +544,7 @@ nav {
     transition: .2s linear;
 }
 
-.spaces__card_1:hover .spaces__card-image-subtitle {
+.spaces__card:hover .spaces__card-image-subtitle {
     color: var(--spaces-card-text);
     order: 0;
     font-family: 'Lora';
@@ -1385,11 +1389,11 @@ nav {
         flex-direction: column;
     }
 
-    .section__progress_position-absolute {
+    .section__progress_position {
         position: static;
     }
 
-    .section__progress-counter_position-relative {
+    .section__progress-counter_position {
         width: auto;
         position: static;
         transform: rotate(0deg);
